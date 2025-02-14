@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       <h1>BOOKING MANAGEMENT </h1>
+    <div class="container">
+        <h1>Hotel Room Booking</h1>
+        <form id="bookingForm">
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" required>
+
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" min="1" max="5" required>
+
+            <label for="room">Room Type:</label>
+            <select id="room" required>
+                <option value="">Select a Room</option>
+                <option value="single">Single Room</option>
+                <option value="double">Double Room</option>
+                <option value="suite">Suite</option>
+            </select>
+            <a href="https://in.hotels.com/?locale=en_IN&siteid=300000036&semcid=HCOM-IN.UB.GOOGLE.GT-c-EN.HOTEL&semdtl=a121749368933.b1169011311738.g1kwd-17218370.e1c.m1EAIaIQobChMI7v7t26bCiwMV28JMAh1hEBx-EAAYASAAEgJ3e_D_BwE.r1.c1.j19300955.k1.d1716376771578.h1e.i1.l1.n1.o1.p1.q1.s1.t1.x1.f1.u1.v1.w1&gad_source=1&gclid=EAIaIQobChMI7v7t26bCiwMV28JMAh1hEBx-EAAYASAAEgJ3e_D_BwE">Book Now</button>
+        </form>
+
+        <div id="confirmation"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
